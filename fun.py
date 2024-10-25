@@ -11,7 +11,18 @@ def dog_years():
     ```
     """
 
-    #enter your code here
+    h_years = int(input("Input a dog's age in human years: "))
+    d_years = 0
+    
+    for i in range(1, h_years + 1):
+        if i <= 2:
+            d_years = d_years + 10.5
+        else:
+            d_years = d_years + 4
+            
+    print(d_years)
+    
+dog_years()
 
 def fizzbuzz(num):
     """
@@ -24,7 +35,14 @@ def fizzbuzz(num):
     fizzbuzz(15) => "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz"
     """
 
-    #enter your code here
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+        
+fizzbuzz(15)
 
     
 
@@ -40,7 +58,8 @@ def word_lengths(sentence):
     ```
     """
     
-    #enter your code here
+    sentence = input("Input a sentence: ")
+    x = {}
 
 def cube_sum(number):
     """
